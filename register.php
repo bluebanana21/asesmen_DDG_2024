@@ -11,30 +11,28 @@
 </head>
 
 <body>
-    <?php
-    // print_r($_POST);
-    // if (isset($_POST["submit"])) {
-    //     $username = $_POST['username'];
-    //     $email = $_POST['email'];
-    //     $password = $_POST['password'];
-    // } else {
-    //     require_once "koneksi.php";
-    // }
-    ?>
+    <style>
+        body {
+            /* background-image: url('Assets/newspaper-aesthetic-background-6zy4tj738voyh9fx.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; */
+        }
+    </style>
     <div class="container">
         <form action="handler_register.php" method="post">
             <div class="field">
-                <label for="">username</label>
+                <label for="">Username</label>
                 <input type="text" class="form-control" name="username" placeholder="Username">
             </div>
 
             <div class="field">
-                <label for="">email</label>
+                <label for="">Email</label>
                 <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
 
             <div class="field">
-                <label for="">password</label>
+                <label for="">Password</label>
                 <input type="password" class="form-control" name="password" placeholder="Password">
             </div>
 
