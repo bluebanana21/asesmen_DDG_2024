@@ -26,6 +26,9 @@ if (isset($_POST["create"])) {
         if ($fileError === 0) {
             if ($fileSize < 1000000) {
                 $fileNameNew = uniqid('', true) . "." . $fileActualExt;
+                $fileDestination = '../Assets/images' . $fileNameNew;
+                move_uploaded_file($fileTmpName, $fileDestination);
+                
             } else {
                 echo "file size os too big";
             }
@@ -51,6 +54,8 @@ if (isset($_POST["create"])) {
     } else {
         die("data tidak masuk");
     }
+
+    header("Location: manage.php");
 }
 
 

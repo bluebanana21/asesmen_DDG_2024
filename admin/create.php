@@ -23,7 +23,7 @@ include ("components/header.php");
         </div>
         <br>
 
-        <input type="hidden" name="date" value="<?php echo date("Y/m/d"); ?>">
+        <input type="hidden" name="date" value="<?php date_default_timezone_set("Asia/Jakarta"); echo date("d/m/Y h:i:a"); ?>">
 
         <div class="form-field">
             <input type="submit" class="btn btn-primary" value="submit" name="create">
