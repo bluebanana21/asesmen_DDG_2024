@@ -28,9 +28,9 @@ include ("components/header.php");
                     <td><?php echo $data["image"] ?></td>
 
                     <td>
-                        <a class="btn btn-info" href="view.php?id=<?php echo $data["date"] ?>">View</a>
-                        <a class="btn btn-warning" href="view.php?id=<?php echo $data["date"] ?>">Edit</a>
-                        <a class="btn btn-danger" href="view.php?id=<?php echo $data["date"] ?>">Delete</a>
+                        <a class="btn btn-info" href="view.php?id=<?php echo $data["id"] ?>">View</a>
+                        <a class="btn btn-warning" href="edit.php?id=<?php echo $data["id"] ?>">Edit</a>
+                        <a class="btn btn-danger" href="delete.php?id=<?php echo $data["id"] ?>">Delete</a>
                     </td>
                 </tr>
                 <?php
