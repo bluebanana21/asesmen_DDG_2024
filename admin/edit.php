@@ -39,7 +39,7 @@ if ($id) {
 
             <div class="form-field">
                 <input type="file" class="btn btn-primary" name="image" accept=".jpg, .png, .jpeg"
-                    value=""><?php echo $data['image'] ?>
+                    value="<?php echo $data['image'] ?>">
             </div>
             <br>
 
