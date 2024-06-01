@@ -26,7 +26,7 @@ if (isset($_POST["create"])) {
         if ($fileError === 0) {
             if ($fileSize < 1000000) {
                 $fileNameNew = uniqid('', true) . "." . $fileActualExt;
-                $fileDestination = '../Assets/images' . $fileNameNew;
+                $fileDestination = '../Assets/images/' . $fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
 
             } else {
@@ -90,7 +90,7 @@ if (isset($_POST["update"])) {
         if ($fileError === 0) {
             if ($fileSize < 1000000) {
                 $fileNameNew = uniqid('', true) . "." . $fileActualExt;
-                $fileDestination = '../Assets/images' . $fileNameNew;
+                $fileDestination = '../Assets/images/' . $fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
 
             } else {

@@ -25,7 +25,7 @@ include ("components/header.php");
                     <td><?php echo $data["date"] ?></td>
                     <td><?php echo $data["title"] ?></td>
                     <td><?php echo $data["summary"] ?></td>
-                    <td><img src="../Assets/images<?php echo $data["image"] ?>" width="60%" height="60%" alt=""></td>
+                    <td><img src="../Assets/images/<?php echo $data["image"] ?>" width="60%" height="60%" alt=""></td>
 
                     <td>
                         <a class="btn btn-info" href="view.php?id=<?php echo $data["id"] ?>">View</a>
