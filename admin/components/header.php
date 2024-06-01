@@ -19,7 +19,11 @@
             </h1>
             <div class="menues p-4 mt-5">
                 <div class="menu">
-                    <a href="../admin/create.php" class="text-light text-decoration-none"><strong>Add new post</strong></a>
+                    <a href="../admin/create.php" class="text-light text-decoration-none"><strong>Add new
+                            post</strong></a>
+                </div>
+                <div class="menu mt-5">
+                    <a href="../app/login.php" class="btn btn-info">Login</a>
                 </div>
             </div>
         </div>

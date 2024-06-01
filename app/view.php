@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <header class="bg-dark">
+    <header class="p-4 bg-dark text-center">
         <h1><a href="home.php" class="text-light text-decoration-none">Simple Blog</a></h1>
     </header>
-    <div class="post-list">
+    <div class="post-list mt-5">
         <div class="container">
             <?php
             $id = $_GET['id'];
@@ -37,6 +37,9 @@
 
             ?>
         </div>
+    </div>
+    <div class="footer bg-dark p-4 mt-4">
+        <a href="../admin/manage.php" class="text-light">Admin panel</a>
     </div>
 </body>
 

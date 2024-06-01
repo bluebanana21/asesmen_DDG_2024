@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <header class="bg-dark">
+    <header class="p-4 bg-dark text-center">
         <h1><a href="home.php" class="text-light text-decoration-none">Simple Blog</a></h1>
     </header>
-    <div class="post-list">
+    <div class="post-list mt-5">
         <div class="container">
             <?php
             include ("koneksi.php");
@@ -28,19 +28,19 @@
                         echo $data['date']
                             ?>
                     </div>
-                    <div class="col sm-3">
+                    <div class="col-sm-3">
                         <h2>
                             <?php
                             echo $data['title']
                                 ?>
                         </h2>
                     </div>
-                    <div class="col sm-5">
+                    <div class="col-sm-5">
                         <?php
                         echo $data['content']
                             ?>
                     </div>
-                    <div class="col sm-2">
+                    <div class="col-sm-2">
                         <a href="view.php?id=<?php echo $data['id']; ?>" class="btn btn-primary">READ MORE</a>
                     </div>
                 </div>
@@ -48,6 +48,9 @@
             }
             ?>
         </div>
+    </div>
+    <div class="footer bg-dark p-4 mt-4">
+        <a href="../admin/manage.php" class="text-light">Admin panel</a>
     </div>
 </body>
 
