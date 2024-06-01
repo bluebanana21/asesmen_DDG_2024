@@ -10,6 +10,5 @@ $user = $koneksi
 
 session_start();
 $_SESSION['user_login'] = $user;
-header("Location: dashboard.php");
-
+header("Location: ../admin/manage.php");
 ?>

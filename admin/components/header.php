@@ -23,7 +23,10 @@
                             post</strong></a>
                 </div>
                 <div class="menu mt-5">
-                    <a href="../app/login.php" class="btn btn-info">Login</a>
+                    <a href="../app/home.php" class="text-light text-decoration-none"><strong>View website</strong></a>
+                </div>
+                <div class="menu mt-5">
+                    <a href="../app/logout.php" class="btn btn-info">Logout</a>
                 </div>
             </div>
         </div>

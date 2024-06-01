@@ -2,6 +2,13 @@
 include ("components/header.php");
 ?>
 
+<?php
+// include_once "menu.php";
+include "../app/check_login.php";
+include "../app/koneksi.php";
+$user = $_SESSION['user_login'];
+?>
+
 <div class="posts-list w-100 p-5">
     <table class="table table-bordered">
         <thead>
@@ -16,6 +23,11 @@ include ("components/header.php");
         <tbody>
 
             <?php
+            $user = $_SESSION['user_login'];
+            $id_user = $user['id'];
+            $berita = $koneksi->query("SELECT * FROM posts WHERE id = $id_user");
+            $data = $berita->fetch_all();
+
             include ("../app/koneksi.php");
             $sqlSelect = "SELECT * FROM posts";
             $result = mysqli_query($koneksi, $sqlSelect);

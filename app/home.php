@@ -13,6 +13,7 @@
     <header class="p-4 bg-dark text-center">
         <h1><a href="home.php" class="text-light text-decoration-none">Simple Blog</a></h1>
     </header>
+    <a href="login.php">Login</a>
     <div class="post-list mt-5">
         <div class="container">
             <?php

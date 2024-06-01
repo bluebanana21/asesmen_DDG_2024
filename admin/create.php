@@ -1,5 +1,6 @@
 <?php
 include ("components/header.php");
+include ("../app/check_login.php");
 
 ?>
 
